@@ -1,0 +1,26 @@
+.nav{
+  display: flex;
+  height: .9rem;
+  border-bottom: solid 1px #eeeeee;
+  .item{
+    flex:1;
+    color: #7c8294;
+    font-size:.3rem;
+    line-height: .85rem;
+    text-align: center;
+    &.active{
+      color: #364387;
+      .line{
+        display: block;
+      }
+    }
+    .line{
+      width: 1.6rem;
+      height: .06rem;
+      margin:0 auto ;
+      display: none;
+      background-color: #364387;
+      border-radius: 3px;
+    }
+  }
+}

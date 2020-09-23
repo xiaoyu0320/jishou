@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maxinum-scale=1.0,width=device-width">
+  <!-- <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maxinum-scale=1.0,width=device-width"> -->
+  <!-- <meta name="viewport" content="width=device-width, viewport-fit=cover"> -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <title>幸运寄售</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but wallet1.0.3 doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <script src="./apiconfig.js"></script>
+  <script>
+    document.addEventListener('gesturestart', function(event) {
+      let e = event || window.event
+      if (typeof event.preventDefault != 'undefined') {//w3c
+        e.preventDefault();
+      } else{
+        e.returnValue = false;//ie
+      }
+    })
+  </script>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
